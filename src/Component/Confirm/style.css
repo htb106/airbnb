@@ -1,0 +1,8 @@
+.content {
+  min-width: 320px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all linear 2s;
+  transition: all linear 2s;
+}
+/*# sourceMappingURL=style.css.map */

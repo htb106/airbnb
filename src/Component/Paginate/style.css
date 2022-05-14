@@ -1,0 +1,39 @@
+.pageActive {
+  background: #8f8f8f !important;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.pageHover {
+  padding: .4rem .6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+  margin: 0 .5rem;
+}
+
+.pageHover:hover {
+  background: #ececec;
+}
+
+.previousLink {
+  margin: 0 .5rem;
+  padding: .4rem .6rem;
+  border-radius: 50%;
+}
+
+.previousLink:hover {
+  background: #e4e4e4;
+}
+
+.nextLink {
+  margin: 0 .5rem;
+  padding: .4rem .6rem;
+  border-radius: 50%;
+}
+
+.nextLink:hover {
+  background: #e4e4e4;
+}
+/*# sourceMappingURL=style.css.map */

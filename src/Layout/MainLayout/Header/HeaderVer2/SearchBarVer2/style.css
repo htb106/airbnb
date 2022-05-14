@@ -1,0 +1,121 @@
+.locationSearch {
+  position: relative;
+}
+
+.locationSearch:hover .locationSearch_dropdown {
+  display: block;
+}
+
+.locationSearch:hover .locationSearch_deleted {
+  display: block;
+}
+
+.locationSearch::after {
+  content: "";
+  display: block;
+  height: 2rem;
+  width: 250px;
+  position: absolute;
+  top: 95%;
+  left: 0;
+}
+
+.locationSearch .locationSearch_dropdown {
+  width: 450px;
+  height: 532px;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  -webkit-transform: scaleY(1.05);
+          transform: scaleY(1.05);
+  display: none;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.locationSearch .locationSearch_dropdown .img {
+  height: 50px;
+  width: 50px;
+}
+
+.locationSearch .locationSearch_deleted {
+  display: none;
+}
+
+.datePicker {
+  position: relative;
+}
+
+.datePicker::after {
+  content: "";
+  display: block;
+  height: 2rem;
+  width: 340px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.datePicker:hover .datePicker_deleted {
+  display: block;
+}
+
+.datePicker:hover .datePicker_dropdown {
+  display: block;
+}
+
+.datePicker .datePicker_dropdown {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 700px;
+  display: none;
+}
+
+.datePicker .datePicker_deleted {
+  display: none;
+}
+
+.guests {
+  position: relative;
+}
+
+.guests:hover .guests_dropdown {
+  display: block;
+}
+
+.guests:hover .guests_deleted {
+  display: block;
+}
+
+.guests::after {
+  content: "";
+  display: block;
+  height: 2rem;
+  width: 250px;
+  position: absolute;
+  top: 95%;
+  left: 0;
+}
+
+.guests .guests_dropdown {
+  display: none;
+  width: 450px;
+  position: absolute;
+  top: 120%;
+  right: 0%;
+}
+
+.guests .guests_deleted {
+  display: none;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+/*# sourceMappingURL=style.css.map */

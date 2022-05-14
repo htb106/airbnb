@@ -1,0 +1,38 @@
+.content_mobile {
+    transform: translate3d(0 , 0, 0);
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    width: 100%;
+    min-height: calc(60vh + 65px);
+    transform: translateY(-10vh);
+    .wrapper {
+        min-height: 30px;
+        width: 100%;
+        position: unset;
+        max-width: 640px;
+        margin-left: 0;
+        margin-right: 0;
+        // borderTopLeftRadius: '24px',
+        // borderTopRightRadius: '24px',
+        .content__top__transparent {
+            appearance: none;
+            background-color: transparent;
+            border: 0;
+            display: block;
+            margin: 0;
+            outline: none;
+            width: 100%;
+            z-index: 0;
+            transition: all .3s ease-in;
+        };
+        .section {
+            width: 85vw;
+            margin: 8px auto;
+            padding-bottom: 80px;
+    
+        }
+    }
+};

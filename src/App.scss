@@ -1,0 +1,23 @@
+:root {
+  color: #222222;
+  .rdrDateRangePickerWrapper {
+    max-width: 100%;
+    padding: 0 10px 20px 10px;
+    .rdrDefinedRangesWrapper {
+      display: none !important;
+    };
+    
+    .rdrDateRangeWrapper {
+      width: 100%;
+      margin-right: 4px;
+    };
+    
+    .rdrMonth {
+      width: 100%;
+      max-width: 100%;
+    }
+  };
+  
+};
+
+

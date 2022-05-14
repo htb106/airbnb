@@ -1,0 +1,48 @@
+.sidebar {
+    background-color: #191a1f;
+    .bg_logo{
+        background-color: #ff385c;
+    }
+    li{
+        color: #9ba3af !important;
+        &:hover {
+            color: rgb(209 213 219) !important;
+        }
+    }
+}
+
+.item{
+    position: relative;
+    &:hover {
+        &::before{
+            display: block
+        }
+    };
+    &::before{
+        content: " ";
+        display: none;
+        height: 100%;
+        width: 4px;
+        background-color: #ff385c;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+};
+
+.active_link {
+    position: relative;
+    color: #1384dc !important;
+    &::before{
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 4px;
+        background-color: #ff385c;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

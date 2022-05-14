@@ -1,0 +1,22 @@
+.room_img {
+    position: relative;
+    cursor: pointer;
+    transition: all .1s linear;
+    &:hover {
+        &::after {
+            display: block;
+        }
+    };
+    &::after {
+        content: '';
+        display: none;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgb(0 0 0 / .1);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    };
+};

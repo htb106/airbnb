@@ -1,0 +1,13 @@
+.header_ad {
+  background: #191a1f !important;
+}
+
+.header_ad .search_icon {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header_ad .search_input {
+  background-color: #191a1f;
+}
+/*# sourceMappingURL=style.css.map */
