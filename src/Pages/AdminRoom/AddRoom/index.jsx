@@ -27,7 +27,11 @@ const AddRoom = () => {
   const { enqueueSnackbar } = useSnackbar();
 
   const onSubmit = (data) => {
-    dispatch(addRoomAction(data, enqueueSnackbar('Tạo phòng thành công', { variant: 'success' })));
+    dispatch(
+      addRoomAction(
+        data, 
+        enqueueSnackbar('Tạo phòng thành công', { variant: 'success' },
+      )));
   };
 
   return (

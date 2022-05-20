@@ -27,10 +27,12 @@ const AdminRoom = () => {
   const { enqueeuSnackbar } = useSnackbar();
 
   const handleDelete = (idRoom) => {
+
     dispatch(
       deleteRoomAction(
         idRoom, 
-        () => enqueeuSnackbar('Xoá phòng thành công', { variant: 'success' })
+        () => {enqueeuSnackbar('Xoá phòng thành công', { variant: 'success' })},
+        params.idLocation
       ));
   };
 
@@ -94,10 +96,7 @@ const AdminRoom = () => {
                       </NavLink>
                       <RiDeleteBin5Fill
                         className='w-6 h-6 z-20 cursor-pointer mx-2 text-red-500'
-                        onClick={(e) => {
-                          e.preventDefault();
-                          handleDelete();
-                        }}
+                        onClick={() => handleDelete(room._id)}
                       />
                     </div>
                   </td>

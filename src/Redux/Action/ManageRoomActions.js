@@ -38,12 +38,15 @@ export const getRoomDetailAction = (id) => {
     }
 };
 
-export const deleteRoomAction = (id, callback) => {
+export const deleteRoomAction = (id, callback, idLocation) => {
     return async (dispatch) => {
         try {
             await manageRoomsApi.deleteRoom(id);
-            dispatch(getRoomListAction());
+
             callback();
+
+            dispatch(getRoomListAction(idLocation));
+
         }
         catch (err) {
             console.log(err)
@@ -55,7 +58,7 @@ export const addRoomAction = (info, callback) => {
     return async (dispatch) => {
         try {
             await manageRoomsApi.addRoom(info);
-            dispatch(getRoomListAction());
+
             callback();
         }
         catch (err) {
@@ -68,7 +71,7 @@ export const editRoomAction = (id, info, callback) => {
     return async (dispatch) => {
         try {
             await manageRoomsApi.editRoom(id, info);
-            dispatch(getRoomListAction());
+
             callback();
         }
         catch (err) {

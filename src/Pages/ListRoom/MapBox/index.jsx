@@ -8,7 +8,7 @@ const Mapbox = ({ arrRoom, handleNextPageDetail, setRoomLocationMap, setprovince
     const [viewport, setViewport] = useState({
         longitude: 0,
         latitude: 0,
-        zoom: 11,
+        zoom: 10,
     });
 
     const getLocationParams = {
