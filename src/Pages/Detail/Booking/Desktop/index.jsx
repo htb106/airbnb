@@ -120,7 +120,7 @@ const BookingDesktop = ({ detailRoom, arrReview, queryParams, roomId }) => {
                     />
                 </div>
             </div>
-            <div className='pb-2 relative lg:my-10 md:mb-20'>
+            <div className='pb-2 relative xl:my-10 md:mb-20'>
                 {
                     (bookingTime[0].startDate && bookingTime[0].endDate) ?
                         <div className='pt-6'>

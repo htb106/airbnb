@@ -84,7 +84,7 @@ const Pay = () => {
 
   return (
     <>
-      <div className='pt-32 px-10 md:pt-5 md:px-0'>
+      <div className='pt-32 px-20 md:pt-5 md:px-0'>
         <div className='flex items-center pb-8 md:pb-4'>
           <div
             onClick={() => {
